@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Musical Beast</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link rel="stylesheet" href="style.css">
+        </head>
+		<body style="background-color: #03f8fc;">
+				<b><h1 style="font-family:Comic Sans MS; font-size:50px;">WELCOME TO MUSICAL BEAST</h1></b>
+				<h2 style="font-family:Comic Sans MS; font-size:30px;">Book your tickets for the Show...</h2>
+				<button style="font-family:Comic Sans MS; id="btn" onclick="showDiv()">LogIn/SignUp</button>
+				<div id="modal">
+				<div id="container1">
+					<h1 style="font-family:Times New Roman; font-size:8vh; color:white;" class="glow">MUSICAL BEAST</h1>
+					<br>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#" name="RegForm" onsubmit = "return(validate());">
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="https://en-gb.facebook.com/login/" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://accounts.google.com/signin/v2/sl/pwd?service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&navigationDirection=forward" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="https://in.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span><b>or use your email for registration</b></span>
+		</br>
+			<table>
+			<tr>
+			<td>Name</td>
+			<td><input type="text" name="Name" placeholder="Name" required></td>
+			</tr>
+			<tr>
+			<td>Email</td>
+			<td><input type="email" name = "EMail" placeholder="Email" required/></td>
+			</tr>
+			<tr>
+			<td>Password</td>
+			<td><input type="password" name="Password"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  placeholder="Password" required/></td>
+			</tr>
+			</table>
+		</br>
+			<button onclick = "validate();">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#" name="RegForm1" onsubmit = "return(validate1());">
+			<h1>Sign in via</h1>
+			<div class="social-container">
+				<a href="https://en-gb.facebook.com/login/" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://accounts.google.com/signin/v2/sl/pwd?service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&navigationDirection=forward" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="https://in.linkedin.com/" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span><b>or create your account</b></span>
+		</br>
+			<table>
+					<tr>
+					<td>Email</td>
+					<td><input type="email" name = "EMail" placeholder="Email" required /></td>
+					</tr>
+					<tr>
+					<td>Password</td>
+					<td><input type="password" name="Password" placeholder="Password" required /></td>
+					</tr>
+					</table>
+				</br>
+			<button onclick = "validate1();">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Hey<br> Welcome Back!</h1>
+				<p>To keep connected with MUSICAL BEAST please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>If you haven't Signed Up yet then, Enter your personal details and start your journey with MUSICAL BEAST</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<button id="close" onclick="hideDiv()">close</button>
+</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
